@@ -1,0 +1,23 @@
+.criminal-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.criminal-card {
+    border: 1px dotted;
+    padding: 1em;
+    margin: 1em;
+    width: 15vw;
+    height: 20rem;
+}
+
+.officer-card {
+    
+    border: 1px dotted;
+    padding: 1em;
+    margin: 1em;
+    width: 15vw;
+    height: 20rem;
+}
