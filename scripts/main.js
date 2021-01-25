@@ -1,7 +1,5 @@
 console.log("Welcome to the main module")
 
-import { getCriminals, useCriminals } from "./criminals/CriminalDataProvider.js"
+import { CriminalList } from "./criminals/CriminalList.js"
 
-console.log(getCriminals())
-
-console.log(useCriminals())
+CriminalList()
