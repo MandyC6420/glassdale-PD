@@ -1,23 +1,23 @@
-import { getConvictions, useConvictions } from './ConvictionsDataProvider.js'
-import { conviction } from './convinction.js'
+// import { getConvictions, useConvictions } from "./ConvictionsDataProvider.js";
+// import { conviction } from "./convinction.js";
 
-export const ConvictionList = () => {
-    getConvictions().then(() => {
-        let convictionContainer = document.querySelector(".convictions-select-container")
-        let allTheConvictions = useConvictions();
-        
-        let convictionListHTML= ""
+// export const ConvictionList = () => {
+//   getConvictions().then(() => {
+//     let convictionContainer = document.querySelector(
+//       ".convictions-select-container"
+//     );
+//     let allTheConvictions = useConvictions();
 
-        for(let i = 0; i < allTheConvictions.length; i++){
-            convictionListHTML += conviction(allTheConvictions[i]);
-        }
+//     let convictionListHTML = "";
 
-        convictionContainer.innerHTML = convictionListHTML
+//     for (let i = 0; i < allTheConvictions.length; i++) {
+//       convictionListHTML += conviction(allTheConvictions[i]);
+//     }
 
-        console.log(convictionListHTML);
+//     convictionContainer.innerHTML = convictionListHTML;
 
-        // Now that you have the data, what component should be rendered?
-    })
+//     console.log(convictionListHTML);
 
-
-}
+//     // Now that you have the data, what component should be rendered?
+//   });
+// };
