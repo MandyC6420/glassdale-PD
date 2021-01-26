@@ -1,27 +1,31 @@
-import { getCriminals, useCriminals } from './CriminalDataProvider.js'
-import { criminal } from './Criminal.js'
+import { getCriminals, useCriminals } from "./CriminalDataProvider.js";
+import { criminal } from "./Criminal.js";
 
+export const CriminalList = (convictionFilter) => {
+  getCriminals().then(() => {
+    let criminalContainer = document.querySelector(".criminal-list");
+    let allTheCriminals = useCriminals();
 
-export const CriminalList = () => {
-    getCriminals().then(() => {
-        let criminalContainer = document.querySelector(".criminal-list")
-        let allTheCriminals = useCriminals();
-        
-        let criminalListHTML= ""
+    let criminalListHTML = "";
 
-        for(let i = 0; i < allTheCriminals.length; i++){
-            criminalListHTML += criminal(allTheCriminals[i]);
-        }
+    if (convictionFilter) {
+        allTheCriminals = allTheCriminals.filter((currentCriminal) => {
+        return currentCriminal.conviction === convictionFilter;
+      });
+    }
 
-        criminalContainer.innerHTML = criminalListHTML
+    for (let i = 0; i < allTheCriminals.length; i++) {
+      criminalListHTML += criminal(allTheCriminals[i]);
+    }
 
-        console.log(criminalListHTML);
+    criminalContainer.innerHTML = criminalListHTML;
 
-        // Now that you have the data, what component should be rendered?
-    })
+    console.log(criminalListHTML);
 
-}
+    // Now that you have the data, what component should be rendered?
+  });
+};
 
 document.querySelector("#criminals-nav-link").addEventListener("click", () => {
-    return CriminalList()
-})
+  return CriminalList();
+});
