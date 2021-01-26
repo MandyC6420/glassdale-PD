@@ -2,11 +2,11 @@ export const conviction = (convictionObject) => {
     return`
     <ul>
     <li>${convictionObject.age}</li>
-    <li>Crime: ${criminalObject.conviction}</li>
-    <li>Term Start: ${new Date(criminalObject.incarceration.start).toLocaleDateString(
+    <li>Crime: ${convictionObject.conviction}</li>
+    <li>Term Start: ${new Date(convictionObject.incarceration.start).toLocaleDateString(
         "en-US"
       )}</li>
-      <li>Term End: ${new Date(criminalObject.incarceration.end).toLocaleDateString(
+      <li>Term End: ${new Date(convictionObject.incarceration.end).toLocaleDateString(
         "en-US"
       )}</li>
     </ul>`

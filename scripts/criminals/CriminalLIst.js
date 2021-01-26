@@ -20,5 +20,8 @@ export const CriminalList = () => {
         // Now that you have the data, what component should be rendered?
     })
 
-
 }
+
+document.querySelector("#criminals-nav-link").addEventListener("click", () => {
+    return CriminalList()
+})
