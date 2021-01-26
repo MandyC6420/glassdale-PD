@@ -10,7 +10,7 @@
   padding: 1em;
   margin: 1em;
   width: 15vw;
-  height: 20rem;
+  height: 20em;
 }
 
 .officer-card {
@@ -18,7 +18,7 @@
   padding: 1em;
   margin: 1em;
   width: 15vw;
-  height: 7rem;
+  height: 7em;
 }
 
 .officer-list {
@@ -33,7 +33,7 @@
   padding: 1em;
   margin: 1em;
   width: 15vw;
-  height: 12rem;
+  height: 12em;
 }
 
 .facilities-list {
@@ -43,7 +43,7 @@
   align-items: center;
 }
 
-.dark-background{
+.dark-background {
   background-color: #2b362e;
   color: #fafcfb;
 }
