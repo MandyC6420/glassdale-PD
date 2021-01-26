@@ -16,6 +16,10 @@ import { FacilityList } from "./facility/facilityList.js";
 
 // FacilityList()
 
+import { ConvictionSelect } from "./convictions/ConvictionSelect.js";
+
+ConvictionSelect()
+
 const darkModeButton = document.querySelector("#dark-mode");
 darkModeButton.addEventListener("click", function () {
   // Select the entire body tag
