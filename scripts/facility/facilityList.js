@@ -19,3 +19,7 @@ export const FacilityList = () => {
     // Now that you have the data, what component should be rendered?
   });
 };
+
+document.querySelector("#facilitiesnav-link").addEventListener("click", () => {
+  return FacilityList()
+})
