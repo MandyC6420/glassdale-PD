@@ -9,7 +9,7 @@ export const getFacility = () => {
         .then(response => response.json())
         .then(
             parsedFacility => {
-                // console.table(parsedFacility)
+                console.table(parsedFacility)
                 facility = parsedFacility
             }
         )
