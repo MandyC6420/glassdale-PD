@@ -18,12 +18,27 @@
   padding: 1em;
   margin: 1em;
   width: 15vw;
-  height: 3rem;
+  height: 7rem;
 }
 
-.officer-list{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+.officer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.facility-card {
+  border: 1px dotted;
+  padding: 1em;
+  margin: 1em;
+  width: 15vw;
+  height: 12rem;
+}
+
+.facilities-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }

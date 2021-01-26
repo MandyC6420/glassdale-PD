@@ -12,3 +12,6 @@ import { ConvictionList } from "./convictions/convictionList.js"
 
 ConvictionList()
 
+import { FacilityList } from "./facility/facilityList.js"
+FacilityList()
+
