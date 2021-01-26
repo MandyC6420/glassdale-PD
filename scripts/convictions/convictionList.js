@@ -1,5 +1,5 @@
 import { getConvictions, useConvictions } from './ConvictionsDataProvider.js'
-
+import { conviction } from './convinction.js'
 
 export const ConvictionList = () => {
     getConvictions().then(() => {
