@@ -9,7 +9,7 @@ const eventHub = document.querySelector("main")
 export const OfficerSelect = () => {
     getOfficers().then(() => {
       let allTheOfficers = useOfficers();
-      console.log(allTheOfficers);
+      // console.log(allTheOfficers);
   
       render(allTheOfficers);
     });
