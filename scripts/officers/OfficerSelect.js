@@ -36,11 +36,7 @@ eventHub.addEventListener("change", changeEvent => {
     const selectedOfficer = changeEvent.target.value
     CriminalList(null, selectedOfficer);
   }
-  console.log("You clicked somewhere in the main container");
-
-  // To be more specific, we need to know specifically what we clicked on
-  console.log("Here is the element you clicked on: ", changeEvent.target);
-
+ 
   if (changeEvent.target.id === "OfficerSelect") {
     console.log("You selected something from the officer dropdown");
     console.log(
@@ -49,6 +45,6 @@ eventHub.addEventListener("change", changeEvent => {
     );
     // Your code goes here!
 
-    CriminalList(null, "selectedOfficer");
+    CriminalList(null, changeEvent.target.value);
   }
 });
