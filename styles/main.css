@@ -48,4 +48,26 @@
   color: #fafcfb;
 }
 
+.nav-bar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
