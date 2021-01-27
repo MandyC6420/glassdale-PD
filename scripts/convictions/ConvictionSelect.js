@@ -11,7 +11,7 @@ const contentTarget = document.querySelector(".filters__crime");
 export const ConvictionSelect = () => {
   getConvictions().then(() => {
     let allTheConvictions = useConvictions();
-    console.log(allTheConvictions);
+    // console.log(allTheConvictions);
 
     render(allTheConvictions);
   });
