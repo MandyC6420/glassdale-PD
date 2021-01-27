@@ -1,7 +1,7 @@
 import { getCriminals, useCriminals } from "./CriminalDataProvider.js";
 import { criminal } from "./Criminal.js";
 
-export const CriminalList = (convictionFilter) => {
+export const CriminalList = (convictionFilter, officerFilter) => {
   getCriminals().then(() => {
     let criminalContainer = document.querySelector(".criminal-list");
     let allTheCriminals = useCriminals();
@@ -14,6 +14,12 @@ export const CriminalList = (convictionFilter) => {
       });
     }
 
+    if (officerFilter) {
+      allTheCriminals = allTheCriminals.filter((currentCriminal) => {
+      return currentCriminal.arrestingOfficer === officerFilter;
+    });
+  }
+    
     for (let i = 0; i < allTheCriminals.length; i++) {
       criminalListHTML += criminal(allTheCriminals[i]);
     }

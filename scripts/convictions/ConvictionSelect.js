@@ -21,12 +21,15 @@ const render = (convictionsCollection) => {
   /*
         Use interpolation here to invoke the map() method on
         the convictionsCollection to generate the option elements.
-        Look back at the example provided above.
+        
     */
 
   contentTarget.innerHTML = `
         <select class="dropdown" id="crimeSelect">
             <option value="0">Please select a crime...</option>
+
+            // .map is here looping over convictionsCollection
+            // .map always takes a function fat arrow
             ${convictionsCollection.map((convictionObject) => {
               const crime = convictionObject.name;
               return `<option>${crime}</option>`;
@@ -43,7 +46,7 @@ eventHub.addEventListener("change", (eventObject) => {
   // To be more specific, we need to know specifically what we clicked on
   console.log("Here is the element you clicked on: ", eventObject.target);
 
-  if (event.target.id === "crimeSelect") {
+  if (eventObject.target.id === "crimeSelect") {
     console.log("You selected something from the crime dropdown");
     console.log(
       "This is the crime that was selected: ",

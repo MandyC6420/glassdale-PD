@@ -20,6 +20,10 @@ import { ConvictionSelect } from "./convictions/ConvictionSelect.js";
 
 ConvictionSelect()
 
+import { OfficerSelect } from "./officers/OfficerSelect.js"
+
+OfficerSelect()
+
 const darkModeButton = document.querySelector("#dark-mode");
 darkModeButton.addEventListener("click", function () {
   // Select the entire body tag
