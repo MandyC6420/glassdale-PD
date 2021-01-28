@@ -16,6 +16,9 @@ import { FacilityList } from "./facility/facilityList.js";
 
 // FacilityList()
 
+import { NoteForm } from "./Notes/NoteForm.js"
+NoteForm()
+
 import { ConvictionSelect } from "./convictions/ConvictionSelect.js";
 
 ConvictionSelect()
@@ -28,7 +31,9 @@ import { WitnessList } from "./witnesses/WitnessList.js"
 
 import { getAssociate } from "./criminals/AssociateList.js"
 
-getAssociate()
+// getAssociate()
+
+
 
 const darkModeButton = document.querySelector("#dark-mode");
 darkModeButton.addEventListener("click", function () {
