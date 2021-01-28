@@ -5,7 +5,7 @@ let witnessContainer = document.querySelector(".witness-statement-container");
 export const WitnessList = () => {
   getWitnesses().then(() => {
     let allTheWitnesses = useWitnesses();
-    console.log(allTheWitnesses);
+    // console.log(allTheWitnesses);
     let witnessListHTML = "";
 
     for (let i = 0; i < allTheWitnesses.length; i++) {
@@ -14,7 +14,7 @@ export const WitnessList = () => {
 
     witnessContainer.innerHTML = witnessListHTML;
 
-    console.log(witnessListHTML);
+    // console.log(witnessListHTML);
 
     // Now that you have the data, what component should be rendered?
   });

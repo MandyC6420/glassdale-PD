@@ -26,6 +26,10 @@ OfficerSelect()
 
 import { WitnessList } from "./witnesses/WitnessList.js"
 
+import { getAssociate } from "./criminals/AssociateList.js"
+
+getAssociate()
+
 const darkModeButton = document.querySelector("#dark-mode");
 darkModeButton.addEventListener("click", function () {
   // Select the entire body tag

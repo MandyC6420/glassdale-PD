@@ -6,7 +6,7 @@ export const OfficerList = () => {
     getOfficers().then(() => {
         
         let allTheOfficers = useOfficers();
-        console.log(allTheOfficers)
+        // console.log(allTheOfficers)
         let officerListHTML= ""
 
         for(let i = 0; i < allTheOfficers.length; i++){
@@ -15,7 +15,7 @@ export const OfficerList = () => {
 
         officerContainer.innerHTML = officerListHTML
 
-        console.log(officerListHTML);
+        // console.log(officerListHTML);
 
         // Now that you have the data, what component should be rendered?
     })
