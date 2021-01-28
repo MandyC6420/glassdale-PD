@@ -26,7 +26,7 @@ export const CriminalList = (convictionFilter, officerFilter) => {
 
     criminalContainer.innerHTML = criminalListHTML;
 
-    console.log(criminalListHTML);
+    // console.log(criminalListHTML);
 
     // Now that you have the data, what component should be rendered?
   });

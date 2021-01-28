@@ -47,13 +47,13 @@ eventHub.addEventListener("change", (eventObject) => {
   console.log("Here is the element you clicked on: ", eventObject.target);
 
   if (eventObject.target.id === "crimeSelect") {
-    console.log("You selected something from the crime dropdown");
-    console.log(
-      "This is the crime that was selected: ",
-      eventObject.target.value
-    );
+    //  console.log("You selected something from the crime dropdown");
+    //  console.log(
+    //   "This is the crime that was selected: ",
+    //   eventObject.target.value
+    // );
     // Your code goes here!
-
-    CriminalList(eventObject.target.value);
+    const crimeChosen = eventObject.target.value
+    CriminalList(crimeChosen);
   }
 });
