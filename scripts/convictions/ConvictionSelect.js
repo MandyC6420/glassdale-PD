@@ -25,6 +25,7 @@ const render = (convictionsCollection) => {
     */
 
   contentTarget.innerHTML = `
+  
         <select class="dropdown" id="crimeSelect">
             <option value="0">Please select a crime...</option>
 
@@ -35,11 +36,12 @@ const render = (convictionsCollection) => {
               return `<option>${crime}</option>`;
             })}
         </select>
+        </div>
     `;
 };
 
 // This won't throw an error, but it will fire any time there's a change event anywhere in the main container
-const eventHub = document.querySelector("main");
+const eventHub = document.querySelector("body");
 eventHub.addEventListener("change", (eventObject) => {
   // console.log("You clicked somewhere in the main container");
 
@@ -53,6 +55,7 @@ eventHub.addEventListener("change", (eventObject) => {
     //   eventObject.target.value
     // );
     // Your code goes here!
+    
     const crimeChosen = eventObject.target.value
     CriminalList(crimeChosen);
   }

@@ -4,7 +4,7 @@ import { CriminalList } from '../criminals/criminalList.js'
 // Get a reference to the DOM element where the <select> will be rendered
 const contentTarget = document.querySelector(".filters__officers");
 
-const eventHub = document.querySelector("main")
+const eventHub = document.querySelector("body")
 
 export const OfficerSelect = () => {
     getOfficers().then(() => {
@@ -17,7 +17,7 @@ export const OfficerSelect = () => {
 
   const render = (OfficersCollection) => {
     contentTarget.innerHTML = `
-    <div class="sticky-top">
+    
     <select class="dropdown" id="OfficerSelect">
         <option value="0">Please select an officer...</option>
 
