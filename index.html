@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/html" href="./styles/main.css" />
+    <link rel="stylesheet" type="text/html" href="styles/main.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -43,12 +43,12 @@
           </nav>
           </div>
         </div>
-
+        <div class = "select-list" style="display: flex; justify-content: space-evenly;">
         <section class="filters__officers"></section>
 
         <section class="filters__crime"></section>
+      </div>
       
-
     <!-- <button id="dark-mode">Dark Mode</button> -->
 
     <main>
@@ -56,8 +56,7 @@
         <!-- <h2>Criminals</h2> -->
         <div class="convictions-select-container"></div>
 
-        <article class="noteFormContainer"></article>
-        <article class="noteContainer"></article>
+        
 
         <div class="criminal-list flex-container"></div>
       </section>
@@ -77,6 +76,13 @@
       <section class="witness-statement-container flex-container"></section>
 
       <section class="associate-container flex-container"></section>
+
+      <div>
+        <article class="noteFormContainer" style="display: flex; padding: 2em; margin-left: 1em; margin-right: 1em;"></article>
+          <article class="noteContainer"></article>
+          
+        </div>
+        
     </main>
 
     <script type="module" src="./scripts/main.js"></script>
