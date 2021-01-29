@@ -17,6 +17,7 @@ export const OfficerSelect = () => {
 
   const render = (OfficersCollection) => {
     contentTarget.innerHTML = `
+    <div class="sticky-top">
     <select class="dropdown" id="OfficerSelect">
         <option value="0">Please select an officer...</option>
 
@@ -27,6 +28,7 @@ export const OfficerSelect = () => {
           return `<option>${officer}</option>`;
         })}
     </select>
+    </div>
 `;
 };
 

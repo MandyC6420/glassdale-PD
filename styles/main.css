@@ -1,59 +1,66 @@
 .criminal-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .criminal-card {
+    border: 1px dotted;
+    padding: 1em;
+    margin: 1em;
+    width: 15vw;
+    height: 20em;
+  }
+  
+  .officer-card {
+    border: 1px dotted;
+    padding: 1em;
+    margin: 1em;
+    width: 15vw;
+    height: 7em;
+  }
+  
+  .officer-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .facility-card {
+    border: 1px dotted;
+    padding: 1em;
+    margin: 1em;
+    width: 15vw;
+    height: 12em;
+  }
+  
+  .facilities-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .dark-background {
+    background-color: #2b362e;
+    color: #fafcfb;
+  }
+  
+  .navbar navbar-expand-lg navbar-light bg-light {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .fixed-top {
+      display: flex;
+      justify-content: flex-end;
+  }
+  
 
-.criminal-card {
-  border: 1px dotted;
-  padding: 1em;
-  margin: 1em;
-  width: 15vw;
-  height: 20em;
-}
 
-.officer-card {
-  border: 1px dotted;
-  padding: 1em;
-  margin: 1em;
-  width: 15vw;
-  height: 7em;
-}
-
-.officer-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.facility-card {
-  border: 1px dotted;
-  padding: 1em;
-  margin: 1em;
-  width: 15vw;
-  height: 12em;
-}
-
-.facilities-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.dark-background {
-  background-color: #2b362e;
-  color: #fafcfb;
-}
-
-.nav-bar {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-
-
-
+  
+  
+  

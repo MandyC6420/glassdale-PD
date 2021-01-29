@@ -3,9 +3,7 @@ import { note } from "./Note.js";
 
 export const NoteList = () => {
   getNotes().then(() => {
-    let noteContainer = document.querySelector(
-      ".noteFormContainer"
-    );
+    let noteContainer = document.querySelector(".noteFormContainer");
     let allTheNotes = saveNote();
 
     let NoteListHTML = "";
