@@ -17,7 +17,7 @@ export const NoteForm = () => {
   <input type="suspect" name="note-suspect" id="suspect_form" />
   </fieldset>
 
-        <button id="saveNote">Save Note</button>
+        <button type="button" id="saveNote" class="btn btn-dark">Save Note</button>
     `;
 };
 
