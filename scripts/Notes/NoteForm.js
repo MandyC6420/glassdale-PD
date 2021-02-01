@@ -19,6 +19,8 @@ export const NoteForm = () => {
 
         <button type="button" id="saveNote" class="btn btn-dark">Save Note</button>
     `;
+
+
 };
 
 const eventHub = document.querySelector("main");
