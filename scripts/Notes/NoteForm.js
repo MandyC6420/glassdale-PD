@@ -1,4 +1,5 @@
 import { saveNote } from "./NoteDataProvider.js";
+import { NoteList } from "./NoteList.js"
 
 const contentTarget = document.querySelector(".noteFormContainer");
 
@@ -23,18 +24,18 @@ export const NoteForm = () => {
 
 };
 
-const eventHub = document.querySelector("main");
+const eventHub = document.querySelector(".noteForm");
 
 eventHub.addEventListener("click", (clickEvent) => {
   if (clickEvent.target.id === "saveNote") {
-    let noteInput = document.getElementById("note_form").value;
-    let dateInput = document.getElementById("date_form").value;
-    let suspectInput = document.getElementById("suspect_form").value;
+    let noteInput = document.getElementById("note_form")
+    let dateInput = document.getElementById("date_form")
+    let suspectInput = document.getElementById("suspect_form")
     // Make a new object representation of a note
     const newNote = {
-      noteText: noteInput,
-      date: dateInput,
-      suspect: suspectInput,
+      noteText: noteInput.value,
+      date: dateInput.value,
+      suspect: suspectInput.value,
     };
 
     // Change API state and application state

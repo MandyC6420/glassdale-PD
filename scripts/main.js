@@ -19,6 +19,9 @@ import { FacilityList } from "./facility/facilityList.js";
 import { NoteForm } from "./Notes/NoteForm.js"
 NoteForm()
 
+import { NoteList } from "./Notes/NoteList.js"
+NoteList()
+
 import { ConvictionSelect } from "./convictions/ConvictionSelect.js";
 
 ConvictionSelect()
@@ -32,6 +35,13 @@ import { WitnessList } from "./witnesses/WitnessList.js"
 import { getAssociate } from "./criminals/AssociateList.js"
 
 // getAssociate()
+
+// import {NoteForm} from "./Notes/NoteForm"
+// NoteForm()
+
+
+
+
 
 
 

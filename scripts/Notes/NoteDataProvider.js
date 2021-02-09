@@ -20,8 +20,6 @@ export const saveNote = (note) => {
   }).then(getNotes); // After we add a note, get them all again so our new note appears in our collection
 };
 
-
-
 const NoteForm = () => {
-    // rest of the code here
+  // rest of the code here
 }
