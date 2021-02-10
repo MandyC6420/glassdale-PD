@@ -1,0 +1,5 @@
+1.  Add a dropdown of criminals to your note form
+
+2. When the users click the save button, you should save the id of the criminal selected, not the name
+
+3. When you print notes, you should print the associated criminal name and not their id (even though their id should be stored in the db)
