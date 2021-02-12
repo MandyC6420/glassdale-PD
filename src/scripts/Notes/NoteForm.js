@@ -3,8 +3,12 @@ import { saveNote } from "./NoteDataProvider.js";
 import { NoteList } from "./NoteList.js"
 
 const contentTarget = document.querySelector(".noteFormContainer");
+const eventHub = document.querySelector(".noteFormContainer")
 
 export const NoteForm = () => {
+  getCriminals().then(() => {
+    let allTheCriminals = useCriminals()
+  
   contentTarget.innerHTML = `
   <fieldset>
   <label for="note-text">Notes:</label>
@@ -20,12 +24,21 @@ export const NoteForm = () => {
   </fieldset>
 
         <button type="button" id="saveNote" class="btn btn-dark">Save Note</button>
-    `;
+        <select id="noteForm--criminal" class="criminalSelect">
+        <option value="">Please Select a Criminal...</option>
+        ${allTheCriminals.map((currentCriminalInLoop) => {
+            return `<option value="${currentCriminalInLoop.id}">
+            ${currentCriminalInLoop.name}</option>
+            `
+        }).join("")}
+        </select>
+        `
+    })
+    } // buidling the form - need an input or property of the note`;
 
 
-};
 
-const eventHub = document.querySelector(".noteFormContainer");
+
 
 eventHub.addEventListener("click", (clickEvent) => {
   if (clickEvent.target.id === "saveNote") {
@@ -35,8 +48,8 @@ eventHub.addEventListener("click", (clickEvent) => {
     // Make a new object representation of a note
     const newNote = {
       noteText: noteInput.value,
-      // date: dateInput.value,
-      // suspect: suspectInput.value,
+      date: dateInput.value,
+      suspect: suspectInput.value
     };
 
     // Change API state and application state
@@ -61,6 +74,11 @@ const renderCriminalDropdown = (criminalCollection) => {
   <fieldset>
   <label for="note-text">Notes:</label>
   <input type="text" name="notes" id="note_form" />
+  </fieldset>
+
+  <fieldset>
+  <label for="date of note">Date:</label>
+  <input type="date" name="note-date" id="date_form" />
   </fieldset>
   
   

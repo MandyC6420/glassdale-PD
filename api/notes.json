@@ -1,12 +1,6 @@
 {
   "notes": [
     {
-      "noteText": "hi",
-      "date": "2021-01-28",
-      "suspect": "emmanuel",
-      "id": 1
-    },
-    {
       "noteText": "Smashed into yellow car and took off",
       "date": "2021-01-29",
       "suspect": "Christopher Samson",
@@ -29,30 +23,6 @@
       "date": "1987-02-28",
       "suspect": "No one knows, it's a mystery",
       "id": 5
-    },
-    {
-      "noteText": "",
-      "date": "",
-      "suspect": "",
-      "id": 6
-    },
-    {
-      "noteText": "hi",
-      "date": "2021-02-10",
-      "suspect": "test",
-      "id": 7
-    },
-    {
-      "noteText": "",
-      "id": 8
-    },
-    {
-      "noteText": "hi",
-      "id": 9
-    },
-    {
-      "noteText": "hello",
-      "id": 10
     }
   ]
 }
