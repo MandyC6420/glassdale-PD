@@ -24,10 +24,10 @@ export const NoteForm = () => {
   </fieldset>
 
         <button type="button" id="saveNote" class="btn btn-dark">Save Note</button>
-        <select id="noteForm--criminal" class="criminalSelect">
+        <select id="criminal-Select" class="noteForm--criminal">
         <option value="">Please Select a Criminal...</option>
         ${allTheCriminals.map((currentCriminalInLoop) => {
-            return `<option value="${currentCriminalInLoop.id}">
+            return `<option id ="criminal--id" value="${currentCriminalInLoop.id}">
             ${currentCriminalInLoop.name}</option>
             `
         }).join("")}
@@ -42,14 +42,14 @@ export const NoteForm = () => {
 
 eventHub.addEventListener("click", (clickEvent) => {
   if (clickEvent.target.id === "saveNote") {
-    let noteInput = document.getElementById("note_form")
-    let dateInput = document.getElementById("date_form")
-    let suspectInput = document.getElementById("suspect_form")
+    let noteInput = document.getElementById("note_form").value
+    let dateInput = document.getElementById("date_form").value
+    let idInput = document.getElementById("criminal-Select").value
     // Make a new object representation of a note
     const newNote = {
-      noteText: noteInput.value,
-      date: dateInput.value,
-      suspect: suspectInput.value
+      noteText: noteInput,
+      date: dateInput,
+      criminalId: idInput
     };
 
     // Change API state and application state
@@ -82,7 +82,7 @@ const renderCriminalDropdown = (criminalCollection) => {
   </fieldset>
   
   
-  <select class="dropdown" id="CriminalSelect">
+  <select class="dropdown" id="criminal-Select">
       <option value="">Please select a suspect...</option>
 
       
@@ -92,7 +92,7 @@ const renderCriminalDropdown = (criminalCollection) => {
   
       ${criminalCollection.map((criminalObject) => {
         const criminalName = criminalObject.name;
-        return `<option value ="${criminalObject.id}">${criminalName}</option>`;
+        return `<option id = "criminal--id" value ="${criminalObject.id}">${criminalName}</option>`;
       })}
       
       

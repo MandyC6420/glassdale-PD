@@ -5,7 +5,7 @@ export const note = (singleNote, relatedCriminal) => {
     <section class="noteDate">
     <div class="card-body">
       <h1>Date: ${singleNote.date}</h1>
-      <p class="suspect">Suspect: ${relatedCriminal}</p>
+      <p class="suspect">Suspect: ${relatedCriminal.name}</p>
       <p class="note-Text__">Note: ${singleNote.noteText}</p>
       <button id="deleteNote--${singleNote.id}">Delete</button>
       </div>

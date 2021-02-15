@@ -10,14 +10,19 @@ export const NoteList = () => {
   getNotes()
     .then(getCriminals())
     .then(() => {
-      let allTheNotes = useNotes();
-      let allTheCriminals = useCriminals();
       
+      let allTheNotes = useNotes();
+      console.log(allTheNotes)
+      let allTheCriminals = useCriminals();
+      console.log(allTheCriminals)
       const arrayofMatchingNotes = allTheNotes.map((singleNote) => {
-        const relatedCriminal = allTheCriminals.find(criminal => criminal.id === +singleNote.criminalId
+       
+        const relatedCriminal = allTheCriminals.find(criminal => criminal.id == singleNote.criminalId
         );
+        
         const notesHTML = note(singleNote, relatedCriminal)
         return notesHTML;
+  
       });
       
       // console.log(notesHTML);
@@ -27,8 +32,8 @@ export const NoteList = () => {
 };
 
 eventHub.addEventListener("click", (eventObject) => {
-  console.log("you clicked me")
-  console.log(eventObject.target.id)
+  // console.log("you clicked me")
+  // console.log(eventObject.target.id)
   if(eventObject.target.id.startsWith("deleteNote")){
     const idToDelete = eventObject.target.id.split("--")[1]
     deleteNote(idToDelete)
