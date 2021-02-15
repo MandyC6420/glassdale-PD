@@ -1,28 +1,22 @@
 {
   "notes": [
     {
-      "noteText": "Smashed into yellow car and took off",
-      "date": "2021-01-29",
-      "suspect": "Christopher Samson",
+      "noteText": "we want to save a note",
+      "date": "2021-02-02",
+      "criminalId": "7",
+      "id": 1
+    },
+    {
+      "noteText": "I added .name to the note card",
+      "date": "2021-02-07",
+      "criminalId": "4",
       "id": 2
     },
     {
-      "noteText": "OMG it's Batman",
-      "date": "2021-01-29",
-      "suspect": "Joker isn't afraid",
+      "noteText": "We have a criminal name!",
+      "date": "2021-02-15",
+      "criminalId": "5",
       "id": 3
-    },
-    {
-      "noteText": "Where is my Cat?",
-      "date": "2021-01-24",
-      "suspect": "Megan Franklin",
-      "id": 4
-    },
-    {
-      "noteText": "Valentine's Day Massacre",
-      "date": "1987-02-28",
-      "suspect": "No one knows, it's a mystery",
-      "id": 5
     }
   ]
 }
