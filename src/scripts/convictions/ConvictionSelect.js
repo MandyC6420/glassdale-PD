@@ -2,7 +2,7 @@
  *   ConvictionSelect component that renders a select HTML element
  *   which lists all convictions in the Glassdale PD API
  */
-import { CriminalList } from "../criminals/CriminalList.js";
+import { CriminalFacilityList } from "../criminals/CriminalList.js";
 import { getConvictions, useConvictions } from "./ConvictionProvider.js";
 
 // Get a reference to the DOM element where the <select> will be rendered
@@ -49,14 +49,14 @@ eventHub.addEventListener("change", (eventObject) => {
   // console.log("Here is the element you clicked on: ", eventObject.target);
 
   if (eventObject.target.id === "crimeSelect") {
-    //  console.log("You selected something from the crime dropdown");
-    //  console.log(
-    //   "This is the crime that was selected: ",
-    //   eventObject.target.value
-    // );
+     console.log("You selected something from the crime dropdown");
+     console.log(
+      "This is the crime that was selected: ",
+      typeof eventObject.target.value
+    );
     // Your code goes here!
     
     const crimeChosen = eventObject.target.value
-    CriminalList(crimeChosen);
+    CriminalFacilityList(crimeChosen, null);
   }
 });
