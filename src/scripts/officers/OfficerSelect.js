@@ -1,5 +1,5 @@
 import { getOfficers, useOfficers } from "../officers/OfficerDataProvider.js";
-import { CriminalList } from '../criminals/criminalList.js'
+import { CriminalFacilityList } from '../criminals/criminalList.js'
 
 // Get a reference to the DOM element where the <select> will be rendered
 const contentTarget = document.querySelector(".filters__officers");
@@ -34,10 +34,10 @@ export const OfficerSelect = () => {
 
 
 eventHub.addEventListener("change", changeEvent => {
-  if (changeEvent.target.id === "officerSelect") {
-    const selectedOfficer = changeEvent.target.value
-    CriminalList(null, selectedOfficer);
-  }
+  // if (changeEvent.target.id === "officerSelect") {
+  //   const selectedOfficer = changeEvent.target.value
+  //   CriminalList(null, selectedOfficer);
+  // }
  
   if (changeEvent.target.id === "OfficerSelect") {
     console.log("You selected something from the officer dropdown");
@@ -47,6 +47,6 @@ eventHub.addEventListener("change", changeEvent => {
     );
     // Your code goes here!
 
-    CriminalList(null, changeEvent.target.value);
+    CriminalFacilityList(null, changeEvent.target.value);
   }
 });

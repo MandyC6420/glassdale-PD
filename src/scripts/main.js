@@ -1,8 +1,8 @@
 console.log("Welcome to the main module");
 
-import { CriminalList } from "./criminals/CriminalList.js";
+// import { CriminalLIst } from "./criminals/CriminalList.js";
 
-// CriminalList()
+// CriminalLIst()
 
 import { OfficerList } from "./officers/OfficerList.js";
 
@@ -42,8 +42,8 @@ import { getAssociate } from "./criminals/AssociateList.js"
 import { CriminalSelect } from "./Notes/NoteForm.js"
 CriminalSelect()
 
-
-
+import {CriminalFacilityList} from "./criminals/CriminalLIst.js"
+// CriminalFacilityList()
 
 
 // const darkModeButton = document.querySelector("#dark-mode");
@@ -54,3 +54,9 @@ CriminalSelect()
 //   // Add a class
 //   bodyElement.classList.toggle("dark-background");
 // });
+
+document.querySelector("#criminals-nav-link").addEventListener("click", () => {
+    console.log("you clicked me")
+    CriminalFacilityList();
+  })
+  
