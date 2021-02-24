@@ -89,6 +89,7 @@ const render = (criminalsToRender, allFacilities, allRelationships) => {
 }
 
 document.querySelector("#criminals-nav-link").addEventListener("click", () => {
+  console.log("you clicked me")
   CriminalFacilityList();
 })
 }
